@@ -8,7 +8,7 @@ export default {
     methods: {
         disparaAcao(){
             if(confirm('Confirma operação?')){
-                this.$emit('botaoAtivado');
+                this.$emit('botaoAtivado', new Date());
             }
         }
     }    
