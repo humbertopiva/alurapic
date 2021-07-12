@@ -7,8 +7,9 @@ export default {
     props: ['tipo', 'rotulo'],
     methods: {
         disparaAcao(){
-
-            this.$emit('botaoAtivado');
+            if(confirm('Confirma operação?')){
+                this.$emit('botaoAtivado');
+            }
         }
     }    
 }

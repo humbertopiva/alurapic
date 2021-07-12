@@ -48,9 +48,7 @@ export default {
   methods: {
 
     remove(foto) {
-      if(confirm('Confirma operação?')) {
         alert('Remover a foto!' + foto.titulo)
-      }
     }
 
   },
