@@ -53,7 +53,6 @@ export default {
   },
 
   methods: {
-
     remove(foto) {
       alert('Remover a foto!' + foto.titulo);
     }
