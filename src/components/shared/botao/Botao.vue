@@ -11,6 +11,7 @@ export default {
       if (this.confirmacao) {
         if (confirm('Confirma operação?')) {
           this.$emit('botaoAtivado');
+          
         }
         return;
       }
