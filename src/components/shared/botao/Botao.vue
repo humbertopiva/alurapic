@@ -1,5 +1,5 @@
 <template>
-  <button @click="disparaAcao()" :class="estiloDoBotao" :type="tipo">
+  <button @click="disparaAcao()" class="botao" :class="estiloDoBotao" :type="tipo">
     {{ rotulo }}
   </button>
 </template>
@@ -11,7 +11,6 @@ export default {
       if (this.confirmacao) {
         if (confirm('Confirma operação?')) {
           this.$emit('botaoAtivado');
-          
         }
         return;
       }
@@ -22,8 +21,8 @@ export default {
   computed: {
     
     estiloDoBotao() {
-      if(this.estilo == 'padrao' || !this.estilo ) return 'botao botao-padrao';
-      if(this.estilo == 'perigo') return 'botao botao-perigo';
+      if(this.estilo == 'padrao' || !this.estilo ) return 'botao-padrao';
+      if(this.estilo == 'perigo') return 'botao-perigo';
     }
   }
 };
